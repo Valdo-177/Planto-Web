@@ -31,3 +31,23 @@ body {
     text-wrap: balance;
   }
 }
+
+img {
+  user-select: none;
+  pointer-events: none;
+}
+
+.fondo{
+  background-image: url('../src//Assets/fondo_planto.svg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+@media screen and (max-width:800px) {
+  .fondo{
+    background-image: url('../src//Assets/fondo_planto2.svg');
+    background-position: center;
+    background-size: contain;
+  }
+}
