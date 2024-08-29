@@ -47,7 +47,7 @@ const Tooltip: React.FC<TooltipProps> = ({ children, texto, Position }) => {
     >
       <div className='flex' ref={ChildRef}>{children}</div>
       {show && (
-        <div ref={tooltipRef} onMouseEnter={handleMouseLeave} className={`${position} absolute z-50 bg-[#ffffff1a] rounded-lg shadow-md p-2 text-sm cursor-pointer`}>
+        <div ref={tooltipRef} onMouseEnter={handleMouseLeave} className={`${position} hidden md:block absolute z-50 bg-[#ffffff1a] rounded-lg shadow-md p-2 text-sm cursor-pointer`}>
           {texto}
         </div>
       )} 
